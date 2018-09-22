@@ -1,0 +1,62 @@
+Name: Mehrab Mehdi Islam
+Student ID: 1545664
+
+Project Title : Bugs
+
+Description:
+You control a wizard with your mouse. There will be a giant centipede that will
+gradually move downwards. Left-click or press the space bar to shoot bolts of
+magic to destroy it. Whenever you shoot it, it will split in two and you will
+gain 10 points. Tick (Blue circular insects) will also come from the top of
+the screen. Shooting them will grant 50 points. Spiders will come from the
+sides and move randomly. Killing them will grant 20 points.
+If you successfully kill the centipede, It will spawn again with one more as
+its companion.
+If you are hit with any bug, you will die and be taken to the game over screen.
+
+Instructions :
+To run the game, type "python3 Bugs.py".
+This will take you to the main menu screen which will have three options.
+The first will start the game, the second will take you to instructions and
+the third will reset the high scores. The scores will not disappear immediately
+so you can take a look at them for one last time as the next time
+you visit this screen they will be gone.
+
+
+Different Files:
+Bugs.py contains the main code for the game
+The images and sounds folders contains all the images and sounds.
+The images are in .gif and .png format.
+The sounds and music are in .wav and .mp3 format.
+Background.py contains a class that takes the background image and loads it
+Centipede_part.py contains a class that takes in the centipede image and also
+controls all the movement for the centipede (hitting the wall and mushrooms and
+changing directions)
+Highscore.py contains a class that uses highscore.txt to record the scores.
+The scores from the Bugs.py are saved and entered into highscore.txt as strings.
+It also contains a function can display the top scores onto the screen.
+Spider.py and Tick.py contain their respective classes and contain functions
+for their movement and removal (off screen)
+
+
+References:
+blit_text function was taken from:
+https://stackoverflow.com/questions/42014195/rendering-text-with-multiple-lines-in-pygame?rq=1
+
+Music and fx were taken from:
+https://downloads.khinsider.com/
+
+Wizard, background and spider were taken from Google Images
+
+Centipede, tick and all mushroom states were created using Paint
+
+Special Features:
+The mushrooms image changes every time it is shot so the user knows how
+destroyed it is. After the 4th shot, it will be completely destroyed
+The centipede is able to split into 2 whenever it is shot in the middle and
+moves in the opposite direction.
+It finds where to split by using an algorithm similar to binary
+search.
+Sound effects were added to almost everything, including killing the BUGS
+destroying the mushrooms, and even the attack release sounds were added.
+Game-play music was also added to make the experience more seamless.
